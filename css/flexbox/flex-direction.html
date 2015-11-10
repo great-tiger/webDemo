@@ -1,0 +1,92 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex容器的flex-direction属性</title>
+    <style type="text/css">
+        .note {
+            margin:20px 0;
+            border:2px #ccc solid;
+            padding:30px;
+            border-radius:5px;
+        }
+
+        .flex-container-row {
+            display: flex;
+            width: 500px;
+            border: 1px #006600 solid;
+            padding: 10px;
+            flex-direction: row;
+        }
+
+        .flex-container-row-reverse {
+            display: flex;
+            width: 500px;
+            border: 1px #006600 solid;
+            padding: 10px;
+            flex-direction: row-reverse;
+        }
+
+        .flex-container-column {
+            display: flex;
+            width: 500px;
+            border: 1px #006600 solid;
+            padding: 10px;
+            flex-direction: column;
+        }
+
+        .flex-container-column-reverse {
+            display: flex;
+            width: 500px;
+            border: 1px #006600 solid;
+            padding: 10px;
+            flex-direction: column-reverse;
+        }
+
+        .flex-item {
+            background-color: #ccc;
+            width: 50px;
+            border: solid #00262C 1px;
+            margin:2px;
+        }
+    </style>
+</head>
+<body>
+<div class="note">
+    flex-direction: row;
+</div>
+<div class="flex-container-row">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+    <div class="flex-item">4</div>
+</div>
+<div class="note">
+    flex-direction: row-reverse;
+</div>
+<div class="flex-container-row-reverse">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+    <div class="flex-item">4</div>
+</div>
+<div class="note">
+    flex-direction: column;
+</div>
+<div class="flex-container-column">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+    <div class="flex-item">4</div>
+</div>
+<div class="note">
+    flex-direction: column-reverse;
+</div>
+<div class="flex-container-column-reverse">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+    <div class="flex-item">4</div>
+</div>
+</body>
+</html>

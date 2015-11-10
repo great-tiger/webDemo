@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        .note {
+            margin: 20px 0;
+            border: 2px #ccc solid;
+            padding: 30px;
+            border-radius: 5px;
+        }
+        .flex-container-flex-start {
+            display: flex;
+            width: 600px;
+            height: 200px;
+            background-color: #89479B;
+        }
+
+        .flex-container-flex-end {
+            display: flex;
+            width: 600px;
+            height: 200px;
+            background-color: #89479B;
+            align-items: flex-end;
+        }
+
+        .flex-container-center {
+            display: flex;
+            width: 600px;
+            height: 200px;
+            background-color: #89479B;
+            align-items: center;
+        }
+
+        .flex-container-baseline {
+            display: flex;
+            width: 600px;
+            height: 200px;
+            background-color: #89479B;
+            align-items:baseline;
+        }
+
+        .flex-container-stretch {
+            display: flex;
+            width: 600px;
+            height: 200px;
+            background-color: #89479B;
+            align-items:stretch;
+        }
+
+        .flex-item {
+            width: 100px;
+            height:100px;
+            background-color: #E88024;
+            border: 1px solid #f00;
+        }
+
+    </style>
+</head>
+<body>
+<pre>
+
+    align-items属性定义了项目在交叉轴上的对齐方式。
+
+    flex-start：交叉轴的起点对齐。
+    flex-end：交叉轴的终点对齐。
+    center：交叉轴的中点对齐。
+    baseline: 项目的第一行文字的基线对齐。
+    stretch（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度。
+
+</pre>
+
+<div class="flex-container-flex-start">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+</div>
+<div class="note">
+    align-items: flex-end;
+</div>
+<div class="flex-container-flex-end">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+</div>
+<div class="note">
+    align-items:center;
+</div>
+<div class="flex-container-center">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+</div>
+<div class="note">
+    align-items:baseline;
+</div>
+<div class="flex-container-baseline">
+    <div class="flex-item">1</div>
+    <div class="flex-item"  style="font-size:20px;">2</div>
+    <div class="flex-item">3</div>
+</div>
+<div class="note">
+    align-items:stretch;
+</div>
+<div class="flex-container-stretch">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+</div>
+
+
+</body>
+</html>

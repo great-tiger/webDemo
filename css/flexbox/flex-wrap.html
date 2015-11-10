@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex容器的flex-wrap属性</title>
+    <style type="text/css">
+        .note {
+            margin:20px 0;
+            border:2px #ccc solid;
+            padding:30px;
+            border-radius:5px;
+        }
+
+        .flex-container-nowrap {
+            display:flex;
+            width: 500px;
+            border: 1px #006600 solid;
+            padding: 10px;
+            flex-wrap: nowrap;
+        }
+
+        .flex-container-wrap {
+            display:flex;
+            width: 500px;
+            border: 1px #006600 solid;
+            padding: 10px;
+            flex-wrap: wrap;
+        }
+
+        .flex-container-wrap-reverse {
+            display:flex;
+            width: 500px;
+            border: 1px #006600 solid;
+            padding: 10px;
+            flex-wrap: wrap-reverse;
+        }
+
+        .flex-item {
+            width:90px;
+            background-color:#aaaaaa;
+            color:white;
+            margin:5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="note">
+        flex-wrap:nowrap
+        虽然对每项指定了宽度，但是宽度还是无效的。这就是为什么取元素的宽度要先求计算宽度。
+    </div>
+
+    <div class="flex-container-nowrap">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+        <div class="flex-item">6</div>
+        <div class="flex-item">7</div>
+        <div class="flex-item">8</div>
+    </div>
+
+    <div class="note">
+        flex-wrap:wrap
+    </div>
+
+    <div class="flex-container-wrap">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+        <div class="flex-item">6</div>
+        <div class="flex-item">7</div>
+        <div class="flex-item">8</div>
+    </div>
+
+    <div class="note">
+        flex-wrap:wrap-reverse
+    </div>
+
+    <div class="flex-container-wrap-reverse">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+        <div class="flex-item">6</div>
+        <div class="flex-item">7</div>
+        <div class="flex-item">8</div>
+    </div>
+</body>
+</html>

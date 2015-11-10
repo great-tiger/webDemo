@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        .note {
+            margin: 20px 0;
+            border: 2px #ccc solid;
+            padding: 30px;
+            border-radius: 5px;
+        }
+
+        .flex-container-flex-start {
+            display: flex;
+            width: 600px;
+            height: 100px;
+            background-color: #89479B;
+        }
+
+        .flex-container-flex-end {
+            display: flex;
+            width: 600px;
+            height: 100px;
+            background-color: #89479B;
+            justify-content: flex-end;
+        }
+
+        .flex-container-center {
+            display: flex;
+            width: 600px;
+            height: 100px;
+            background-color: #89479B;
+            justify-content: center;
+        }
+
+        .flex-container-space-between {
+            display: flex;
+            width: 600px;
+            height: 100px;
+            background-color: #89479B;
+            justify-content: space-between;
+        }
+
+        .flex-container-space-around {
+            display: flex;
+            width: 600px;
+            height: 100px;
+            background-color: #89479B;
+            justify-content: space-around;
+        }
+
+        .flex-item {
+            width: 100px;
+            background-color: #E88024;
+            border: 1px solid #f00;
+        }
+    </style>
+</head>
+<body>
+<pre>
+
+    justify-content属性定义了项目在主轴上的对齐方式。
+
+    flex-start（默认值）：左对齐
+    flex-end：右对齐
+    center： 居中
+    space-between：两端对齐，项目之间的间隔都相等。
+    space-around：每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍。
+
+</pre>
+<div class="note">
+    justify-content: flex-start;
+</div>
+<div class="flex-container-flex-start">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+</div>
+<div class="note">
+    justify-content: flex-end;
+</div>
+<div class="flex-container-flex-end">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+</div>
+<div class="note">
+    justify-content:center;
+</div>
+<div class="flex-container-center">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+</div>
+<div class="note">
+    justify-content: space-between;
+</div>
+<div class="flex-container-space-between">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+</div>
+<div class="note">
+    justify-content:space-around;
+</div>
+<div class="flex-container-space-around">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+</div>
+
+</body>
+</html>
