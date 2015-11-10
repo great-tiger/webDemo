@@ -28,6 +28,7 @@ align-self: auto | flex-start | flex-end | center | baseline | stretch;
 
 
 ÒıÓÃ
+
 http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
 
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
