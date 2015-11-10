@@ -1,4 +1,5 @@
-?flexbox 弹性盒子模型
+
+flexbox 弹性盒子模型
 
 1、容器属性
 
@@ -25,4 +26,9 @@ order属性定义项目的排列顺序。数值越小，排列越靠前，默认为0
 align-self属性允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性。默认值为auto，表示继承父元素的align-items属性，如果没有父元素，则等同于stretch。
 align-self: auto | flex-start | flex-end | center | baseline | stretch;
 
+
+引用
+http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties
 
