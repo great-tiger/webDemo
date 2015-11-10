@@ -4,19 +4,25 @@ flexbox 弹性盒子模型
 1、容器属性
 
 下面这两个属性，可以对比理解。
+
 align-content: flex-start | flex-end | center | space-between | space-around | stretch;
+
 justify-content: flex-start | flex-end | center | space-between | space-around;
 
 子元素排列方向
+
 flex-direction：row | row-reverse | column | column-reverse
 
 子元素超出父容器时是否换行
+
 flex-wrap：nowrap | wrap | wrap-reverse
 
 复合属性，简写 flex-direction,flex-wrap
+
 flex-flow：[ flex-direction ] || [ flex-wrap ]
 
 子元素在侧轴（纵轴）方向上的对齐方式
+
 align-items：flex-start | flex-end | center | baseline | stretch
 
 2、项目属性
