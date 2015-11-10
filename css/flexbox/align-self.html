@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        .note {
+            margin: 20px 0;
+            border: 2px #ccc solid;
+            padding: 30px;
+            border-radius: 5px;
+        }
+
+        .flex-container-flex-start {
+            display: flex;
+            width: 600px;
+            height: 200px;
+            background-color: #89479B;
+        }
+
+        .flex-container-flex-end {
+            display: flex;
+            width: 600px;
+            height: 200px;
+            background-color: #89479B;
+            align-items: flex-end;
+        }
+
+        .flex-container-center {
+            display: flex;
+            width: 600px;
+            height: 200px;
+            background-color: #89479B;
+            align-items: center;
+        }
+
+        .flex-container-baseline {
+            display: flex;
+            width: 600px;
+            height: 200px;
+            background-color: #89479B;
+            align-items: baseline;
+        }
+
+        .flex-container-stretch {
+            display: flex;
+            width: 600px;
+            height: 200px;
+            background-color: #89479B;
+            align-items: stretch;
+        }
+
+        .flex-item {
+            width: 100px;
+            height: 100px;
+            background-color: #E88024;
+            border: 1px solid #f00;
+        }
+
+        .center{
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+<pre>
+
+   align-self：auto | flex-start | flex-end | center | baseline | stretch
+    已下例子是设置特定元素居中  align-self: center;
+
+</pre>
+
+<div class="flex-container-flex-start">
+    <div class="flex-item">1</div>
+    <div class="flex-item center">2</div>
+    <div class="flex-item">3</div>
+</div>
+<div class="note">
+    align-items: flex-end;
+</div>
+<div class="flex-container-flex-end">
+    <div class="flex-item">1</div>
+    <div class="flex-item center">2</div>
+    <div class="flex-item">3</div>
+</div>
+<div class="note">
+    align-items:center;
+</div>
+<div class="flex-container-center">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+</div>
+<div class="note">
+    align-items:baseline;
+</div>
+<div class="flex-container-baseline">
+    <div class="flex-item">1</div>
+    <div class="flex-item center" style="font-size:20px;">2</div>
+    <div class="flex-item">3</div>
+</div>
+<div class="note">
+    align-items:stretch;
+</div>
+<div class="flex-container-stretch">
+    <div class="flex-item">1</div>
+    <div class="flex-item center">2</div>
+    <div class="flex-item">3</div>
+</div>
+
+
+</body>
+</html>

@@ -1,1 +1,28 @@
-ï»¿flexbox å¼¹æ€§ç›’å­æ¨¡å‹
+?flexbox µ¯ĞÔºĞ×ÓÄ£ĞÍ
+
+1¡¢ÈİÆ÷ÊôĞÔ
+
+ÏÂÃæÕâÁ½¸öÊôĞÔ£¬¿ÉÒÔ¶Ô±ÈÀí½â¡£
+align-content: flex-start | flex-end | center | space-between | space-around | stretch;
+justify-content: flex-start | flex-end | center | space-between | space-around;
+
+×ÓÔªËØÅÅÁĞ·½Ïò
+flex-direction£ºrow | row-reverse | column | column-reverse
+
+×ÓÔªËØ³¬³ö¸¸ÈİÆ÷Ê±ÊÇ·ñ»»ĞĞ
+flex-wrap£ºnowrap | wrap | wrap-reverse
+
+¸´ºÏÊôĞÔ£¬¼òĞ´ flex-direction,flex-wrap
+flex-flow£º[ flex-direction ] || [ flex-wrap ]
+
+×ÓÔªËØÔÚ²àÖá£¨×İÖá£©·½ÏòÉÏµÄ¶ÔÆë·½Ê½
+align-items£ºflex-start | flex-end | center | baseline | stretch
+
+2¡¢ÏîÄ¿ÊôĞÔ
+
+orderÊôĞÔ¶¨ÒåÏîÄ¿µÄÅÅÁĞË³Ğò¡£ÊıÖµÔ½Ğ¡£¬ÅÅÁĞÔ½¿¿Ç°£¬Ä¬ÈÏÎª0
+
+align-selfÊôĞÔÔÊĞíµ¥¸öÏîÄ¿ÓĞÓëÆäËûÏîÄ¿²»Ò»ÑùµÄ¶ÔÆë·½Ê½£¬¿É¸²¸Çalign-itemsÊôĞÔ¡£Ä¬ÈÏÖµÎªauto£¬±íÊ¾¼Ì³Ğ¸¸ÔªËØµÄalign-itemsÊôĞÔ£¬Èç¹ûÃ»ÓĞ¸¸ÔªËØ£¬ÔòµÈÍ¬ÓÚstretch¡£
+align-self: auto | flex-start | flex-end | center | baseline | stretch;
+
+

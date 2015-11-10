@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex</title>
+</head>
+<body>
+    <pre>
+        This property is the shorthand for the flex-grow, flex-shrink and flex-basis properties.
+        Among other values it also can be set to auto (1 1 auto) and none (0 0 auto).
+
+        flex-glow  空间充足时，指定剩余空间的分配
+        This property specifies the flex grow factor,
+        which determines how much the flex item will grow relative to the rest of the flex items in the flex container
+        when positive free space is distributed.
+
+        flex-shrink 空间不足时，指定缩放比例
+        The flex-shrink specifies the flex shrink factor,
+        which determines how much the flex item will shrink relative to the rest of the flex items in the flex container
+        when negative free space is distributed.
+
+        flex-basic 容器空间减去该属性指定的空间，才是剩余空间。当剩余空间为正数时，按照flex-glow分配。当剩余空间为负数时,按照flex-shrink缩放。
+        This property takes the same values as the width and height properties,
+        and specifies the initial main size of the flex item, before free space is distributed according to the flex factors.
+    </pre>
+</body>
+</html>
