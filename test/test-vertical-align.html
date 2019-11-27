@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style>
+		.ib {
+			display: inline-block;
+            background: black;
+			height: 5px;
+			width: 5px;
+			vertical-align: middle;
+            margin: 0 10px;
+		}
+
+		.container {
+            font-size: 30px;
+			height: 90px;
+			border: 1px solid blue;
+		}
+
+        .td {
+            border: 1px solid red;
+            height: 60px;
+        }
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<span class="ib"></span>xxxxxxfdasfdasfdff
+	</div>
+    <pre>
+    如果一个元素是 inline-block 是支持 vertical-align 的。
+    它相对的是文本居中，并不是相对于父容器的高度。
+    </pre>
+
+    <table>
+        <tr>
+            <td class="td"> <span class="ib"></span>xxxxxx</td>
+        </tr>
+    </table>
+     <pre>
+       td 元素下的内敛元素 vertical-align 好特殊
+    </pre>
+</body>
+
+</html>
