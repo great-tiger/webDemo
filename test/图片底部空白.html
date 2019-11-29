@@ -34,10 +34,16 @@
             height: 100px;
         }
 
-        
         .resolve3 {
             height: 100px;
             display: block;
+        }
+
+        .box4 {
+            font-size: 0
+        }
+        .resolve4 {
+            height: 100px;
         }
     </style>
 </head>
@@ -60,7 +66,18 @@
 
     <div class="box"><img class="resolve3" src="../images/1.jpg"></div>
     <pre> 
-    解决方案2：设置line-height: 0
+    解决方案3：可以一口气干掉“幽灵空白节点”、line-height 和 vertical-align
+    </pre>
+
+    <div class="box box4">x<img class="resolve4" src="../images/1.jpg"></div>
+    <pre> 
+    解决方案4: 字体足够小
+    
+    《css世界》这么解释不理解：
+    容器 font-size 足够小。
+    此方法要想生效，需要容器的 line-height 属性值和当前 font-size 相关，
+    如 line-height:1.5 或者 line-height:150%之类;
+    否则只会让下面的间隙变得更大，因为基线位置因字符 x 变小而往上升了。
     </pre>
 </body>
 </html>
