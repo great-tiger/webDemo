@@ -6,9 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
+        body {
+            /* 就是为了布局好看点 */
+            margin-left: -10px;
+        }
         .box {
-            margin: 10px;
-            background: #ccc;
+            margin-left: 30px;
+            background: lightblue;
         }
         .tImg {
             height: 100px;
@@ -21,6 +25,11 @@
             vertical-align: bottom;
             /*上面三个任何一个都可以*/
         }
+
+        .resolve2 {
+            height: 100px;
+            
+        }
     </style>
 </head>
 <body>
@@ -31,6 +40,11 @@
     </pre>
 
     <div class="box">x<img class="resolve1" src="../images/1.jpg"></div>
+    <pre> 
+    解决方案1：更改对齐方式
+    </pre>
+
+    <div class="box">x<img class="resolve2" src="../images/1.jpg"></div>
     <pre> 解决方案1：更改对齐方式
     </pre>
 </body>
