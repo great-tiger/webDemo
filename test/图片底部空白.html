@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            margin: 10px;
+            background: #ccc;
+        }
+        .tImg {
+            height: 100px;
+        }
+
+        .resolve1 {
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">x<img class="tImg" src="../images/1.jpg"></div>
+    <pre> 引起的原因就是“幽灵空白节点"造成的默认情况下内联元基线对齐。
+    为了方便观察，使用 x， 表示 “幽灵空白节点"
+    </pre>
+
+    <div class="box">x<img class="tImg" src="../images/1.jpg"></div>
+    <pre> 解决方案1：更改对齐方式
+    </pre>
+</body>
+</html>
