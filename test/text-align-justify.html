@@ -1,48 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <style>
-        span{
-            width: 100px;
-            text-align: justify;
-            float: left;
-            overflow: hidden;
-        }
-        span:after{
-            content:'';
-            width: 100%;
-            display: inline-block;
-            height: 0;
-        }
-        input{
-            width: 100px;
-        }
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style>
+		span {
+			width: 100px;
+			text-align: justify;
+			float: left;
+			overflow: hidden;
+		}
 
-        .test {
-            text-align: justify;
-            width: 100px;
-            border: 1px solid #ccc;
-        }
-    </style>
+		span:after {
+			content: '';
+			width: 100%;
+			display: inline-block;
+			height: 0;
+		}
+
+		input {
+			width: 100px;
+		}
+
+		.test {
+			text-align: justify;
+			width: 100px;
+			border: 1px solid #ccc;
+		}
+	</style>
 </head>
+
 <body>
-    <div class="demo">
-        <span>昵称</span>：<input type="text" style = 'width: 100px'><br><br>
-        <span>电子邮箱</span>：<input type="email" style = 'width: 100px;'>
+	<div class="demo">
+		<span>昵称</span>：<input type="text" style = 'width: 100px'><br><br>
+		<span>电子邮箱</span>：<input type="email" style = 'width: 100px;'>
     </div>
-    <br>
-    <pre>使用场景, 没有太仔细看
+		<br>
+		<pre>使用场景, 没有太仔细看
     </pre>
 
-    <p class="test">
-        hello world hello world hello world
-    </p>
-    <pre>text-align:justify使用在单行中，是起不到justify的作用的。 多行文本中，最后一行不起作用。
+		<p class="test">
+			hello world hello world hello world
+		</p>
+		<pre>text-align:justify使用在单行中，是起不到justify的作用的。 多行文本中，最后一行不起作用。
     </pre>
 
+
+		<style>
+			.box {
+                width: 360px;
+				text-align: justify;
+                background: lightgreen;
+			}
+
+			.justify-fix {
+				display: inline-block;
+				width: 96px;
+			}
+		</style>
+		<div class="box">
+			<img src="../images/1.jpg" width="96">
+			<img src="../images/1.jpg" width="96">
+			<img src="../images/1.jpg" width="96">
+			<img src="../images/1.jpg" width="96">
+			<i class="justify-fix"></i>
+			<i class="justify-fix"></i>
+			<i class="justify-fix"></i>
+		</div>
+        <pre>上面的现象是由于 vertical-align 和 line-height 共同决定的。 具体分析过程可以看 《css世界》p135
+        </pre>
+
+
+        <style>
+			.box1 {
+                width: 360px;
+				text-align: justify;
+                background: lightgreen;
+                line-height: 0;
+			}
+
+			.justify-fix1 {
+				display: inline-block;
+                border: 1px dotted red;
+				width: 96px;
+			}
+		</style>
+		<div class="box1">
+			<img src="../images/1.jpg" width="96">
+			<img src="../images/1.jpg" width="96">
+			<img src="../images/1.jpg" width="96">
+			<img src="../images/1.jpg" width="96">
+			<i class="justify-fix1">xxx</i>
+			<i class="justify-fix1"></i>
+			<i class="justify-fix1"></i>
+		</div>
+        <pre>上面的现象是由于 vertical-align 和 line-height。 设置 line-height：0 后
+        </pre>
 </body>
+
 </html>
