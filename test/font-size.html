@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
 	<style>
-		p {
+		.demo1 {
 			font-size: 100px;
 			margin-top: 0px;
 			outline: 1px solid red;
@@ -17,22 +17,24 @@
 		.a {
 			font-family: Helvetica;
 			outline: 1px solid red;
+            background: #ccc;
 		}
 
 		.b {
 			font-family: Gruppo;
 			outline: 1px solid red;
-
+            background: #ccc;
 		}
 
 	</style>
 </head>
 
 <body>
-	<p>
-		<span class="a">Ba</span>
-		<span class="b">Ba</span>
+	<p class="demo1">
+		<span class="a">Bax</span>
+		<span class="b">xBa</span>
 	</p>
+    不同的字体，相同的font-size。高度不同。也就是说line-height为normal时，不同的字体得到的行高是不同的。</p>
 </body>
 
 </html>
