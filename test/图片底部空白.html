@@ -14,6 +14,8 @@
         .box {
             margin-left: 30px;
             background: lightblue;
+            line-height: 0;
+            outline: 1px solid red;
         }
         .tImg {
             height: 100px;
@@ -48,13 +50,13 @@
     </style>
 </head>
 <body>
-    <div class="box">x<img class="tImg" src="../images/1.jpg"></div>
+    <div class="box" style="font-size:40px;">xg<img class="tImg" src="../images/1.jpg"></div>
     <pre> 
     引起的原因就是“幽灵空白节点"造成的默认情况下内联元基线对齐。
     为了方便观察，使用 x， 表示 “幽灵空白节点"
     </pre>
 
-    <div class="box">x<img class="resolve1" src="../images/1.jpg"></div>
+    <div class="box">xg<img class="resolve1" src="../images/1.jpg"></div>
     <pre> 
     解决方案1：更改对齐方式
     </pre>
